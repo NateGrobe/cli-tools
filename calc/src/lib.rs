@@ -180,7 +180,7 @@ fn has_equal_precedence(op1: &str, op2: &str) -> bool {
 }
 
 fn is_num(val: &str) -> bool {
-    match val.parse::<i64>() {
+    match val.parse::<f64>() {
         Ok(_) => true,
         _ => false
     }
